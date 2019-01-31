@@ -243,6 +243,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Note\Index.cshtml" />
     <Content Include="Views\Note\Create.cshtml" />
+    <Content Include="Views\Note\Details.cshtml" />
+    <Content Include="Views\Note\Edit.cshtml" />
+    <Content Include="Views\Note\Delete.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -261,6 +265,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ElevenNote.Contracts\ElevenNote.Contracts.csproj">
+      <Project>{8906745b-6c74-4388-8cd3-2140a0068aa6}</Project>
+      <Name>ElevenNote.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ElevenNote.Data\ElevenNote.Data.csproj">
       <Project>{DA0F5D94-7872-41C9-AD18-8EB8A45852C5}</Project>
       <Name>ElevenNote.Data</Name>
