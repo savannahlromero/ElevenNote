@@ -176,6 +176,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NoteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -240,6 +241,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Note\Index.cshtml" />
+    <Content Include="Views\Note\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -261,6 +264,14 @@
     <ProjectReference Include="..\ElevenNote.Data\ElevenNote.Data.csproj">
       <Project>{DA0F5D94-7872-41C9-AD18-8EB8A45852C5}</Project>
       <Name>ElevenNote.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ElevenNote.Models\ElevenNote.Models.csproj">
+      <Project>{21cc93ac-1c31-47c3-82a7-101789a139e0}</Project>
+      <Name>ElevenNote.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ElevenNote.Services\ElevenNote.Services.csproj">
+      <Project>{00bd684f-2ef3-4f35-89e5-75e49869c702}</Project>
+      <Name>ElevenNote.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
